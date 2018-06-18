@@ -10,6 +10,7 @@ set(ARGOS3_HEADERS_PLUGINS_SIMULATOR_ENTITIES
   directional_led_equipped_entity.h
   gripper_equipped_entity.h
   ground_sensor_equipped_entity.h
+  ground_truth_equipped_entity.h
   led_entity.h
   led_equipped_entity.h
   light_entity.h
@@ -41,6 +42,7 @@ set(ARGOS3_SOURCES_PLUGINS_SIMULATOR_ENTITIES
   directional_led_equipped_entity.cpp
   gripper_equipped_entity.cpp
   ground_sensor_equipped_entity.cpp
+  ground_truth_equipped_entity.cpp
   led_entity.cpp
   led_equipped_entity.cpp
   light_entity.cpp

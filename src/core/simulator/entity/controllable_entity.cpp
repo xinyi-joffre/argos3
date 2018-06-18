@@ -179,7 +179,7 @@ namespace argos {
          for(itSens = itSens.begin(&tSensors);
              itSens != itSens.end();
              ++itSens) {
-            /* itSens->Value() is the name of the current actuator */
+            /* itSens->Value() is the name of the current sensor */
             GetNodeAttribute(*itSens, "implementation", strImpl);
             CSimulatedSensor* pcSens = CFactory<CSimulatedSensor>::New(itSens->Value() + " (" + strImpl + ")");
             CCI_Sensor* pcCISens = dynamic_cast<CCI_Sensor*>(pcSens);
@@ -207,7 +207,7 @@ namespace argos {
       m_vecIntersectionPoints.clear();
       for(std::map<std::string, CSimulatedSensor*>::iterator it = m_mapSensors.begin();
           it != m_mapSensors.end(); ++it) {
-         it->second->Update();
+          it->second->Update();
       }
    }
 
